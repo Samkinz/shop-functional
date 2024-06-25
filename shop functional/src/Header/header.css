@@ -1,0 +1,94 @@
+header{
+  margin-bottom: 8%;
+  position: relative;
+}
+
+header .name{
+  font-weight: 800;
+  font-size: 1.3em;
+  display: inline;
+}
+
+header .logo{
+width: 7%;
+margin-bottom: -0.7%;
+margin-right: 0.5%;
+}
+
+header .banner{
+    margin-left: 0%;
+    margin-right: 0;
+    margin-top: 3%;
+    background: url('./banner.jpeg');
+    width: 100%;
+    height: 30em;
+    background-size: cover;
+    background-position: center 80%;
+    background-blend-mode: multiply;
+    background-color: #d6d6d6;
+    position: relative;
+  }
+
+  header .banner::after {
+    content: "Items for your home";
+    color: antiquewhite;
+    opacity: 0.7;
+    position: absolute;
+    left: 40%;
+    right: 2%;
+    bottom: 1%;
+    text-align: right;
+    font-size: 650%;
+    font-weight: 600;
+  }
+
+  header ul.nav {
+    text-align: right;
+    list-style: none;
+    margin-top: -4%;
+    margin-right: -2%;
+
+  }
+
+  header ul.nav li {
+    display: inline;
+    margin-left: 2%;
+    cursor: pointer;
+    transition: 500ms ease;
+    opacity: 0.6;
+  }
+  
+  header ul.nav li:hover {
+    opacity: 1;
+  }
+
+  .shopping-cart-button{
+    background: transparent;
+    border: transparent;
+    margin: 0;
+    padding: 0;
+  }
+
+.shopping-cart-button.active{
+    transform: translateY(-15%) rotate(180deg);
+    opacity: 1;
+    transition: 500ms;
+}
+
+.shopping-cart-image{
+  cursor: pointer;
+  width: 40%;
+  margin-bottom: 0;
+  margin-right: 0;
+}
+
+.shopping-list{
+  position: absolute;
+  top: 11%;
+  width: 30%;
+  right: -0.2%;
+  min-height: 30%;
+  background-color: rgb(236, 236, 236);
+  z-index: 4;
+  box-shadow: 12px 10px 15px -4px rgba(168, 156, 156, 1);
+}
