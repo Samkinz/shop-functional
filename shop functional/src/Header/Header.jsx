@@ -1,11 +1,13 @@
 import React from "react";
 import "./header.css";
+import CartItem from "../Order/CartItem";
 
-export default function Header() {
+export default function Header({order, deleteOrder}) {
   let [cartOpen, setCartOpen] = React.useState(false);
 
   return (
-    <header>
+    <>
+    <header className="navigation">
       <nav>
         <img
           className="logo"
@@ -30,10 +32,14 @@ export default function Header() {
             </button>
           </li>
         </ul>
-        {cartOpen && <aside className="shopping-list"></aside>}
+        {cartOpen && <aside className="shopping-list">{order.map(el =>
+          <CartItem deleteOrder={deleteOrder} item = {el}>   </CartItem>
+        )}</aside>}
       </nav>
-      <div className="banner"></div>
     </header>
-    
+    <aside>
+            <div className="banner"></div>
+    </aside>
+    </>
   );
 }

@@ -84,7 +84,7 @@ export const FurnitureList = [
       title: "Grey sofa",
       img: "../public/img/sofa/sofa 2.jpeg",
       desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, deleniti!",
-      category: "Lights",
+      category: "Sofas",
       price: "100",
     },
     {
@@ -92,7 +92,7 @@ export const FurnitureList = [
       title: "Grey little sofa",
       img: "../public/img/sofa/sofa 3.jpeg",
       desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, deleniti!",
-      category: "Lights",
+      category: "Sofas",
       price: "70.23",
     },
     {
@@ -100,7 +100,7 @@ export const FurnitureList = [
       title: "Long sofa",
       img: "../public/img/sofa/sofa 4.jpeg",
       desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, deleniti!",
-      category: "Lights",
+      category: "Sofas",
       price: "200.20",
     },
     {
@@ -128,7 +128,7 @@ export const FurnitureList = [
       price: "80.30",
     },
     {
-      id: 15,
+      id: 17,
       title: "Oval marble table",
       img: "../public/img/tables/table 4.jpeg",
       desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, deleniti!",

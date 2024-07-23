@@ -5,17 +5,27 @@ import Items from './Items/Items'
 import './App.css'
 import { FurnitureList } from './FurnitureList'
 
+
 function App() {
 
-  const [order, setOrder] = useState(0)
-  const shoppingCart = FurnitureList[order]
-    console.log(shoppingCart)
+  const [order, setOrder] = useState([])
+
+    const addToOrder= (item)=> {
+      setOrder([...order, item]);
+    }
+
+    const deleteOrder = (id) => {
+      setOrder(order.filter((el) => el.id !== id))
+    }
+      
+
+
 
   return (
     <>
     <div className='wrapper'>
-      <Header/>
-      <Items  />
+      <Header order={order} deleteOrder={deleteOrder}/>
+      <Items addToOrder={addToOrder}/>
       <Footer/>
     </div>
     </>
